@@ -4,8 +4,10 @@ import dash_core_components as dcc
 import altair as alt
 import vega_datasets
 
-
+app = dash.Dash(__name__, assets_folder='assets')
 server = app.server
+
+app.title = 'Dash app with pure Altair HTML'
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
