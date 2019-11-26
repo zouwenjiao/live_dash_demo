@@ -5,6 +5,7 @@ import altair as alt
 import vega_datasets
 
 app = dash.Dash(__name__, assets_folder='assets')
+app.config['suppress_callback_exceptions'] = True
 server = app.server
 
 app.title = 'Dash app with pure Altair HTML'
