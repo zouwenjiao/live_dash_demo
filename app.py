@@ -5,11 +5,8 @@ import altair as alt
 import vega_datasets
 
 app = dash.Dash(__name__, assets_folder='assets')
-#app.config['suppress_callback_exceptions'] = True
 server = app.server
 app.title = 'Dash app with pure Altair HTML'
-
-external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 def make_plot(x_axis = 'Displacement',
             y_axis = 'Cylinders'):
@@ -88,8 +85,6 @@ def make_plot(x_axis = 'Displacement',
 
     return chart
 
-
-app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 app.layout = html.Div([
     html.Iframe(
         sandbox='allow-scripts',
