@@ -84,8 +84,6 @@ def make_plot(x_axis = 'Displacement',
 
     return chart
 
-
-app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 app.layout = html.Div([
     html.Iframe(
         sandbox='allow-scripts',
