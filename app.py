@@ -7,8 +7,6 @@ import vega_datasets
 app = dash.Dash(__name__, assets_folder='assets')
 #app.config['suppress_callback_exceptions'] = True
 server = app.server
-
-app = dash.Dash(__name__, assets_folder='assets')
 app.title = 'Dash app with pure Altair HTML'
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
