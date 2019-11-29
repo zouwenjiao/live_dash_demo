@@ -1,10 +1,15 @@
 import dash
 import dash_html_components as html
 import dash_core_components as dcc
+from dash.dependencies import Input, Output
 import altair as alt
+import sqlalchemy
 import vega_datasets
+import pandas as pd
+import dash_bootstrap_components as dbc
 
 app = dash.Dash(__name__, assets_folder='assets')
+app.config['suppress_callback_exceptions'] = True
 server = app.server
 app.title = 'Dash app with pure Altair HTML'
 
